@@ -11,6 +11,8 @@
         <Button x:Name="button_next" Content="Next" HorizontalAlignment="Left" Margin="224,68,0,0" VerticalAlignment="Top" Width="75" Click="button_next_Click"/>
         <Button x:Name="button_play" Content="Play\Pause" HorizontalAlignment="Left" Margin="224,96,0,0" VerticalAlignment="Top" Width="75" Click="button_play_Click"/>
         <Button x:Name="button_stop" Content="Stop" HorizontalAlignment="Left" Margin="224,121,0,0" VerticalAlignment="Top" Width="75" Click="button_stop_Click"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="141,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,0.192"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="hobbit-pc" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

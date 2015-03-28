@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,6 +36,15 @@ namespace WpfApplication1
         {            
             InitializeComponent(); const uint KEYEVENTF_KEYUP = 0x0002;
             const uint KEYEVENTF_EXTENDEDKEY = 0x0001;
+            IPHostEntry hostEntry;
+
+            hostEntry = Dns.GetHostEntry(textBox.Text);
+          
+            if (hostEntry.AddressList.Length > 0)
+            {
+                var ip = hostEntry.AddressList[0];
+                label.Content = ip.ToString();
+            }
         }
       
         [DllImport("user32.dll")]
